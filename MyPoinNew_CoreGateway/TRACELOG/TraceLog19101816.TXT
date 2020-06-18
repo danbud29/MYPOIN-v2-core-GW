@@ -1,0 +1,44 @@
+18-10-2019 16:10:55: REDEEM FLEXIBLE MASUK : {""token"":""3af1004f8ce67df9a317d447ca2dd522e9e56bff"",""user"":""101767767463"",""store"":""TK5Z"",""reward"":3,""invoice_number"":""TK5Z190926102000000052"",""stamps"":6700,""input_method"":""scanned"",""extra_data"":null}
+18-10-2019 16:10:57: REDEEM POINT REQUEST CORE : http://192.168.72.58:5522/Service.asmx {""id_user"":""101767767463"",""card_num"":""101767767463"",""id_bucket"":""3af1004f8ce67df9a317d447ca2dd522e9e56bff"",""id_toko"":""TK5Z"",""reward"":3,""point"":6700,""invoice_number"":""TK5Z190926102000000052"",""request"":""scanned"",""addtime"":""2019-10-18 16:10:55"",""kodecabang"":""TK5Z"",""kodepromo"":null}
+18-10-2019 16:10:57: REDEEM POINT RESPONSE CORE : 9//[ERROR]:Error converting value ""101767767463"" to type ''System.Int32'.
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(Object value, CultureInfo culture, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.SetPropertyValue(JsonProperty property, JsonReader reader, Object target)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateAndPopulateObject(JsonReader reader, JsonObjectContract contract, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueNonProperty(JsonReader reader, Type objectType, JsonContract contract)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Service.redeem_point(String json)//
+18-10-2019 16:10:57: REDEEM FLEXIBLE RETURN  : [ERROR]:Error converting value ""101767767463"" to type ''System.Int32'.
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(Object value, CultureInfo culture, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.SetPropertyValue(JsonProperty property, JsonReader reader, Object target)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateAndPopulateObject(JsonReader reader, JsonObjectContract contract, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueNonProperty(JsonReader reader, Type objectType, JsonContract contract)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Service.redeem_point(String json)
+18-10-2019 16:11:33: REDEEM FLEXIBLE MASUK : {""token"":""1"",""user"":""228997379182"",""store"":""TK5Z"",""reward"":3,""invoice_number"":""TK5Z190926102000000052"",""stamps"":6700,""input_method"":""scanned"",""extra_data"":null}
+18-10-2019 16:11:33: REDEEM POINT REQUEST CORE : http://192.168.72.58:5522/Service.asmx {""id_user"":""228997379182"",""card_num"":""228997379182"",""id_bucket"":""1"",""id_toko"":""TK5Z"",""reward"":3,""point"":6700,""invoice_number"":""TK5Z190926102000000052"",""request"":""scanned"",""addtime"":""2019-10-18 16:11:33"",""kodecabang"":""TK5Z"",""kodepromo"":null}
+18-10-2019 16:11:33: REDEEM POINT RESPONSE CORE : 9//[ERROR]:Error converting value ""228997379182"" to type ''System.Int32'.
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(Object value, CultureInfo culture, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.SetPropertyValue(JsonProperty property, JsonReader reader, Object target)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateAndPopulateObject(JsonReader reader, JsonObjectContract contract, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueNonProperty(JsonReader reader, Type objectType, JsonContract contract)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Service.redeem_point(String json)//
+18-10-2019 16:11:33: REDEEM FLEXIBLE RETURN  : [ERROR]:Error converting value ""228997379182"" to type ''System.Int32'.
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(Object value, CultureInfo culture, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.SetPropertyValue(JsonProperty property, JsonReader reader, Object target)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateAndPopulateObject(JsonReader reader, JsonObjectContract contract, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueNonProperty(JsonReader reader, Type objectType, JsonContract contract)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Service.redeem_point(String json)

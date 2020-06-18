@@ -1,0 +1,24 @@
+10-02-2020 14:01:29: GETTING MEMBER DATA MASUK : 1//081334769997//1
+10-02-2020 14:01:30: GETTING MEMBER DATA REQUEST KE CORE http://192.168.72.58:5522/service2.asmx {""card_num"":""081334769997"",""id_bucket"":1,""id_merchant"":1}
+10-02-2020 14:01:30: GETTING MEMBER DATA RESPONSE DARI CORE : 9//[ERROR]: Data member tidak ditemukan//081334769997
+10-02-2020 14:01:30: GETTING MEMBER DATA RETURN  : [ERROR]: Data member tidak ditemukan
+10-02-2020 14:01:56: GETTING MEMBER DATA MASUK : 1//081334769997//1
+10-02-2020 14:01:57: GETTING MEMBER DATA REQUEST KE CORE http://192.168.72.58:5522/service2.asmx {""card_num"":""081334769997"",""id_bucket"":1,""id_merchant"":1}
+10-02-2020 14:01:58: GETTING MEMBER DATA RESPONSE DARI CORE : 9//[ERROR]: Data member tidak ditemukan//081334769997
+10-02-2020 14:02:08: GETTING MEMBER DATA RETURN  : [ERROR]: Data member tidak ditemukan
+10-02-2020 14:02:56: GETTING MEMBER DATA MASUK : 1//191347928341//1
+10-02-2020 14:02:56: GETTING MEMBER DATA REQUEST KE CORE http://192.168.72.58:5522/service2.asmx {""card_num"":""191347928341"",""id_bucket"":1,""id_merchant"":1}
+10-02-2020 14:02:56: GETTING MEMBER DATA RESPONSE DARI CORE : 0//{""membership"":{""point"":41063,""is_blocked"":false,""add_time"":""1/10/2020 12:53:56 PM""},""user"":{""id"":15,""name"":""Danbud"",""gender"":""MALE"",""alamat"":""Medit dua"",""phone"":""081288162181"",""email"":""danbud@indomaret.co.id"",""card_num"":""191347928341"",""birthday"":""2020-01-09 00:00:00"",""is_active"":true,""protected_redemption"":false,""start_date"":""2020-01-09 14:28:21""}}//191347928341
+10-02-2020 14:02:56: GETTING MEMBER DATA RETURN  : {""membership"":{""status"":0,""stamps"":41063,""balance"":0,""start_date"":null,""created"":null},""user"":{""member_ids"":null,""is_active"":true,""phone"":""081288162181"",""protected_redemption"":false,""birthday"":""2020-01-09 00:00:00"",""address"":""Medit dua"",""id"":""15"",""name"":""Danbud"",""gender"":""MALE"",""picture_url"":null,""email"":""danbud@indomaret.co.id""}}
+10-02-2020 14:03:55: GETTING MEMBER DATA MASUK : 1//191347928341//1
+10-02-2020 14:03:55: GETTING MEMBER DATA REQUEST KE CORE http://192.168.72.58:5522/service2.asmx {""card_num"":""191347928341"",""id_bucket"":1,""id_merchant"":1}
+10-02-2020 14:03:55: GETTING MEMBER DATA RESPONSE DARI CORE : 0//{""membership"":{""point"":41063,""is_blocked"":false,""add_time"":""1/10/2020 12:53:56 PM""},""user"":{""id"":15,""name"":""Danbud"",""gender"":""MALE"",""alamat"":""Medit dua"",""phone"":""081288162181"",""email"":""danbud@indomaret.co.id"",""card_num"":""191347928341"",""birthday"":""2020-01-09 00:00:00"",""is_active"":true,""protected_redemption"":false,""start_date"":""2020-01-09 14:28:21""}}//191347928341
+10-02-2020 14:03:55: GETTING MEMBER DATA RETURN  : {""membership"":{""status"":0,""stamps"":41063,""balance"":0,""start_date"":null,""created"":null},""user"":{""member_ids"":null,""is_active"":true,""phone"":""081288162181"",""protected_redemption"":false,""birthday"":""2020-01-09 00:00:00"",""address"":""Medit dua"",""id"":""15"",""name"":""Danbud"",""gender"":""MALE"",""picture_url"":null,""email"":""danbud@indomaret.co.id""}}
+10-02-2020 14:04:23: GETTING MEMBER DATA MASUK : 1//081288162181//1
+10-02-2020 14:04:23: GETTING MEMBER DATA REQUEST KE CORE http://192.168.72.58:5522/service2.asmx {""card_num"":""081288162181"",""id_bucket"":1,""id_merchant"":1}
+10-02-2020 14:04:23: GETTING MEMBER DATA RESPONSE DARI CORE : 9//[ERROR]: Data member tidak ditemukan//081288162181
+10-02-2020 14:04:23: GETTING MEMBER DATA RETURN  : [ERROR]: Data member tidak ditemukan
+10-02-2020 14:08:58: GETTING MEMBER DATA MASUK : 1//081288162181//1
+10-02-2020 14:08:58: GETTING MEMBER DATA REQUEST KE CORE http://192.168.72.58:5522/service2.asmx {""card_num"":""081288162181"",""id_bucket"":1,""id_merchant"":1}
+10-02-2020 14:09:00: GETTING MEMBER DATA RESPONSE DARI CORE : 0//{""membership"":{""point"":41063,""is_blocked"":false,""add_time"":""1/10/2020 12:53:56 PM""},""user"":{""id"":15,""name"":""Danbud"",""gender"":""MALE"",""alamat"":""Medit dua"",""phone"":""081288162181"",""email"":""danbud@indomaret.co.id"",""card_num"":""191347928341"",""birthday"":""2020-01-09 00:00:00"",""is_active"":true,""protected_redemption"":false,""start_date"":""2020-01-09 14:28:21""}}//081288162181
+10-02-2020 14:09:00: GETTING MEMBER DATA RETURN  : {""membership"":{""status"":0,""stamps"":41063,""balance"":0,""start_date"":null,""created"":null},""user"":{""member_ids"":null,""is_active"":true,""phone"":""081288162181"",""protected_redemption"":false,""birthday"":""2020-01-09 00:00:00"",""address"":""Medit dua"",""id"":""15"",""name"":""Danbud"",""gender"":""MALE"",""picture_url"":null,""email"":""danbud@indomaret.co.id""}}

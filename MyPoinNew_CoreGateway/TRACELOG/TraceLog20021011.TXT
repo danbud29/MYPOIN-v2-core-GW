@@ -1,0 +1,18 @@
+10-02-2020 11:41:27: TRANSACTION ADD MASUK : {""token"":""d0bdc5221da9ba6305a1e2c685c2f8bb0444d3db"",""created"":""2019-09-26T15:11:11+07"",""user"":""101476539298"",""store"":""TB77"",""number_of_people"":1,""invoice_number"":""NTDL00UT10068701TB77190926104000000015"",""stamps"":3,""total_value"":60000.0,""items"":[{""product_name"":""20072105"",""quantity"":5.0,""price"":20000.0}],""extra_data"":[{""promo"":""NTDL00UT""}]}
+10-02-2020 11:41:28: TRANSACTION ADD REQUEST CORE http://192.168.72.58:5522/service2.asmx --> [{""id_bucket"":""d0bdc5221da9ba6305a1e2c685c2f8bb0444d3db"",""id_toko"":""TB77"",""kode_cabang"":""TB77"",""id_merchant"":""d0bdc5221da9ba6305a1e2c685c2f8bb0444d3db"",""card_num"":""101476539298"",""add_time"":""2020-02-10T11:41:27.2932228+07:00"",""invoice_number"":""NTDL00UT10068701TB77190926104000000015"",""kode_promo"":""NTDL00UT"",""point"":3,""total_value"":60000,""transaction_with1"":"""",""transaction_with2"":"""",""transaction_with3"":"""",""value_transaction1"":0,""value_transaction2"":0,""value_transaction3"":0,""items"":[{""product_name"":""20072105"",""quantity"":5.0,""price"":20000.0}]}]
+10-02-2020 11:41:29: TRANSACTION ADD RESPONSE CORE : 0//[{""customer"":{""status"":false,""errorMessage"":"""",""balance"":0,""mobile_phone"":"""",""card_num"":"""",""point_remaining"":0},""transaction"":{""point_earned"":0,""invoice_number"":""NTDL00UT10068701TB77190926104000000015"",""total_value"":0}}]//
+10-02-2020 11:41:29: TRANSACTION ADD RETURN {""customer"":{""status"":""False"",""balance"":0,""mobile_phone"":"""",""id"":1,""stamps_remaining"":0},""transaction"":{""stamps_earned"":0,""id"":1,""value"":0,""number_of_people"":0}}
+10-02-2020 11:42:19: GETTING MEMBER DATA MASUK : 3af1004f8ce67df9a317d447ca2dd522e9e56bff//081288162181//3
+10-02-2020 11:42:45: GETTING MEMBER DATA MASUK : 3af1004f8ce67df9a317d447ca2dd522e9e56bff//081288162181//3
+10-02-2020 11:49:14: GETTING MEMBER DATA MASUK : 3//081288162181//3
+10-02-2020 11:49:17: GETTING MEMBER DATA REQUEST KE CORE http://192.168.72.58:5522/service2.asmx {""card_num"":""081288162181"",""id_bucket"":3,""id_merchant"":3}
+10-02-2020 11:49:19: GETTING MEMBER DATA RESPONSE DARI CORE : 9//[ERROR]: Data member tidak ditemukan//081288162181
+10-02-2020 11:49:32: GETTING MEMBER DATA RETURN  : [ERROR]: Data member tidak ditemukan
+10-02-2020 11:51:55: GETTING MEMBER DATA MASUK : 1//081288162181//3
+10-02-2020 11:51:57: GETTING MEMBER DATA REQUEST KE CORE http://192.168.72.58:5522/service2.asmx {""card_num"":""081288162181"",""id_bucket"":1,""id_merchant"":3}
+10-02-2020 11:51:58: GETTING MEMBER DATA RESPONSE DARI CORE : 9//[ERROR]: Data member tidak ditemukan//081288162181
+10-02-2020 11:52:05: GETTING MEMBER DATA RETURN  : [ERROR]: Data member tidak ditemukan
+10-02-2020 11:53:51: GETTING MEMBER DATA MASUK : 1//191347928341//3
+10-02-2020 11:53:51: GETTING MEMBER DATA REQUEST KE CORE http://192.168.72.58:5522/service2.asmx {""card_num"":""191347928341"",""id_bucket"":1,""id_merchant"":3}
+10-02-2020 11:53:51: GETTING MEMBER DATA RESPONSE DARI CORE : 1//[ERROR]: Data tidak ditemukan//15
+10-02-2020 11:53:51: GETTING MEMBER DATA RETURN  : [ERROR]: Data tidak ditemukan

@@ -1,0 +1,16 @@
+18-10-2019 10:46:51: GETTING MEMBER DATA MASUK : 1//081288162181//3
+18-10-2019 10:46:51: GETTING MEMBER DATA REQUEST KE CORE http://192.168.72.58:5522/Service.asmx {""card_num"":""081288162181"",""id_bucket"":1,""id_merchant"":3}
+18-10-2019 10:46:51: GETTING MEMBER DATA RESPONSE DARI CORE : 9//[ERROR]: Data member tidak ditemukan//081288162181
+18-10-2019 10:48:18: GETTING MEMBER DATA MASUK : 1//228997379182//3
+18-10-2019 10:48:18: GETTING MEMBER DATA REQUEST KE CORE http://192.168.72.58:5522/Service.asmx {""card_num"":""228997379182"",""id_bucket"":1,""id_merchant"":3}
+18-10-2019 10:48:18: GETTING MEMBER DATA RESPONSE DARI CORE : 1//[ERROR]: Data tidak ditemukan//6
+18-10-2019 10:48:21: GETTING MEMBER DATA MASUK : 1//228997379182//3
+18-10-2019 10:48:21: GETTING MEMBER DATA REQUEST KE CORE http://192.168.72.58:5522/Service.asmx {""card_num"":""228997379182"",""id_bucket"":1,""id_merchant"":3}
+18-10-2019 10:48:21: GETTING MEMBER DATA RESPONSE DARI CORE : 1//[ERROR]: Data tidak ditemukan//6
+18-10-2019 10:48:29: GETTING MEMBER DATA MASUK : 1//228997379182//1
+18-10-2019 10:48:29: GETTING MEMBER DATA REQUEST KE CORE http://192.168.72.58:5522/Service.asmx {""card_num"":""228997379182"",""id_bucket"":1,""id_merchant"":1}
+18-10-2019 10:48:29: GETTING MEMBER DATA RESPONSE DARI CORE : 0//{""membership"":{""point"":16,""is_blocked"":false,""add_time"":""2019-10-17 13:24:14""},""user"":{""id"":6,""name"":""DANIEL"",""gender"":""MALE"",""alamat"":""JALAN JALAN"",""phone"":"""",""email"":""supri_tes@gmail.com"",""card_num"":""228997379182"",""birthday"":""1990-04-04 00:00:00"",""is_active"":true,""protected_redemption"":false,""start_date"":""2019-10-17 09:55:52""}}//228997379182
+18-10-2019 10:48:29: GETTING MEMBER DATA RETURN  : {""membership"":{""status"":0,""stamps"":16,""balance"":0,""start_date"":null,""created"":null},""user"":{""member_ids"":null,""is_active"":true,""phone"":"""",""protected_redemption"":false,""birthday"":""1990-04-04 00:00:00"",""address"":""JALAN JALAN"",""id"":""6"",""name"":""DANIEL"",""gender"":""MALE"",""picture_url"":null,""email"":""supri_tes@gmail.com""}}
+18-10-2019 10:49:00: GETTING MEMBER DATA MASUK : 1//228997379182//3
+18-10-2019 10:49:00: GETTING MEMBER DATA REQUEST KE CORE http://192.168.72.58:5522/Service.asmx {""card_num"":""228997379182"",""id_bucket"":1,""id_merchant"":3}
+18-10-2019 10:49:00: GETTING MEMBER DATA RESPONSE DARI CORE : 1//[ERROR]: Data tidak ditemukan//6
