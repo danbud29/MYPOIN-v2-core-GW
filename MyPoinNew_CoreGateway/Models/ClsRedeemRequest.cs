@@ -31,7 +31,7 @@ namespace MyPoinNew_CoreGateway.Models
 		   "reward":{"id":3,"name":"Flexible Reward","stamps_to_redeem":0,"extra_data":{},"code":"","type":"reward"}}
 	*/
 
-	public cRedemption redemption = new cRedemption();
+		public cRedemption redemption = new cRedemption();
 		public cMembership membership = new cMembership();
 		public cReward reward = new cReward();
 
@@ -66,7 +66,7 @@ namespace MyPoinNew_CoreGateway.Models
 	{
 		public string extra_data { get; set; }
 		public string reward { get; set; }
-		public int id { get; set; }
+		public string id { get; set; }
 		public int stamps_used { get; set; }
 	}
 

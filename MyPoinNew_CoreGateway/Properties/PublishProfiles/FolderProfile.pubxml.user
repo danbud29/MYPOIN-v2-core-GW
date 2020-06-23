@@ -118,10 +118,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/25/2012 11:48:56</publishTime>
     </File>
     <File Include="bin/MyPoinNew_CoreGateway.dll">
-      <publishTime>06/18/2020 16:26:45</publishTime>
+      <publishTime>06/23/2020 16:31:27</publishTime>
     </File>
     <File Include="bin/MyPoinNew_CoreGateway.pdb">
-      <publishTime>06/18/2020 16:26:45</publishTime>
+      <publishTime>06/23/2020 16:31:27</publishTime>
     </File>
     <File Include="bin/MyPoinNew_CoreGateway.XmlSerializers.dll">
       <publishTime>02/10/2020 13:58:45</publishTime>
@@ -376,7 +376,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/02/2019 16:40:06</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>06/18/2020 16:29:27</publishTime>
+      <publishTime>06/23/2020 16:32:16</publishTime>
     </File>
   </ItemGroup>
 </Project>

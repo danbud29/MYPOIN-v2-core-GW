@@ -51,7 +51,7 @@ namespace MyPoinNew_CoreGateway.Models
 	public class coreReq_checkPoin
 	{
 		public string card_num;
-		public int id_bucket;
+		public string id_bucket;
 		public int id_merchant;
 	}
 
