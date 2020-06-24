@@ -109,8 +109,9 @@ namespace MyPoinNew_CoreGateway.Controllers
 				earning.add_time = DateTime.Now;
 				earning.card_num = body.user;
 				earning.invoice_number = body.invoice_number;
-				earning.id_bucket = body.token; //nanti di host IDM, token diisi IDBUCKET + ID MERCHANT
-				earning.id_merchant = body.token;//nanti di host idm, token diisi ID MERCHANT JUGA		
+				earning.id_bucket = body.token; //token yang digunakan di stamps sekarang diisikan ke idbucket untuk nanti dikonversi jadi bucket
+				earning.id_merchant = "3";//pantek ID MERCHANT SELALU 3 (INDOMARET) di core 
+				
 				earning.id_toko = body.store;
 				earning.kode_cabang = body.store;
 				earning.kode_promo = body.extra_data[0].promo;
@@ -239,9 +240,10 @@ namespace MyPoinNew_CoreGateway.Controllers
 
 					response.membership.stamps = cRespCore_redeem.membership.point;
 					response.membership.start_date = cRespCore_redeem.membership.add_time;
+					response.membership.referral_code = cRespCore_redeem.membership.referral_code;
 
 					response.redemption.stamps_used = cRespCore_redeem.redemption_point.point_used;
-					response.redemption.id = cRespCore_redeem.redemption_point.id.ToString();
+					response.redemption.id = int.Parse(cRespCore_redeem.redemption_point.id);//balikan dari core adalah string, sedangkan indomaret nangkepnya adalah integer
 
 					fungsi.tracelog("REDEEM FLEXIBLE RETURN : " + JsonConvert.SerializeObject(response));
 

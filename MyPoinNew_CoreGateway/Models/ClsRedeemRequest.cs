@@ -24,7 +24,7 @@ namespace MyPoinNew_CoreGateway.Models
 
 	
 	public class ClsRedeemResponse
-	{
+	{//buat dikembalikan ke host idm / IGR
 		/*
 		{  "redemption":{"id":3951929,"reward":"Flexible Reward","stamps_used":5300,"extra_data":null},
 		   "membership":{"tags":[],"status":100,"status_text":"Blue","stamps":49,"balance":0,"is_blocked":false,"referral_code":"Z998KKX6","start_date":"2019-09-08","created":"2019-09-08"},
@@ -66,7 +66,7 @@ namespace MyPoinNew_CoreGateway.Models
 	{
 		public string extra_data { get; set; }
 		public string reward { get; set; }
-		public string id { get; set; }
+		public int id { get; set; }
 		public int stamps_used { get; set; }
 	}
 
@@ -117,5 +117,6 @@ namespace MyPoinNew_CoreGateway.Models
 		public int point;
 		public bool is_blocked;
 		public string add_time;
+		public string referral_code;
 	}
 }
