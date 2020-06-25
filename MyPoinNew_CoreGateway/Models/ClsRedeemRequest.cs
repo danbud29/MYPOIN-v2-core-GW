@@ -68,6 +68,7 @@ namespace MyPoinNew_CoreGateway.Models
 		public string reward { get; set; }
 		public int id { get; set; }
 		public int stamps_used { get; set; }
+		public string card_number { get; set; }
 	}
 
 
@@ -78,17 +79,17 @@ namespace MyPoinNew_CoreGateway.Models
 		 * "point":1000,"invoice_number":"TPTP200618101000000260","input_method":"typed","addtime":"2020-06-18 15:36:57","kodecabang":"G001","kodepromo":"HOKA03HK","id_merchant":3}
 		 */
 
-		public string token;
-		public string id_bucket;
-		public string id_toko;
-		
-		public int  point;
-		public string invoice_number;
-		public string input_method;
-		public string addtime;
-		public string kodecabang;
-		public string kodepromo;
-		public string id_merchant;
+		public string token { get; set; }
+		public string id_bucket { get; set; }
+		public string id_toko { get; set; }
+
+		public int  point { get; set; }
+		public string invoice_number { get; set; }
+		public string input_method { get; set; }
+		public string addtime { get; set; }
+		public string kodecabang { get; set; }
+		public string kodepromo { get; set; }
+		public string id_merchant { get; set; }
 	}
 
 	public class coreResp_redeemPoint
@@ -106,17 +107,18 @@ namespace MyPoinNew_CoreGateway.Models
 
 	public class coreResp_RedeemPoint_redemption
 	{
-		public string id;
-		public int point_used;
-		public string add_time;
-		public string status;
+		public string id { get; set; }
+		public int point_used { get; set; }
+		public string add_time { get; set; }
+		public string status { get; set; }
 	}
 
 	public class coreResp_redeemPoint_membership
 	{
-		public int point;
-		public bool is_blocked;
-		public string add_time;
-		public string referral_code;
+		public int point { get; set; }
+		public bool is_blocked { get; set; }
+		public string add_time { get; set; }
+		public string referral_code { get; set; }
+		public string card_number { get; set; }
 	}
 }

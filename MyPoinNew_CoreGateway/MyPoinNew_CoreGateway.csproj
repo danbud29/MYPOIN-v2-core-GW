@@ -245,10 +245,10 @@
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
-    <None Include="Web References\MyPoinCore\Reference.map">
+    <Content Include="Web References\MyPoinCore\Reference.map">
       <Generator>MSDiscoCodeGenerator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
-    </None>
+    </Content>
     <None Include="Web References\MyPoinCore\service2.disco" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -301,7 +301,7 @@
       <CachedDynamicPropName>
       </CachedDynamicPropName>
       <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
-      <CachedSettingsPropName>MyPoinNew_CoreGateway_MyPoinCore_Service</CachedSettingsPropName>
+      <CachedSettingsPropName>MyPoinNew_CoreGateway_MyPoinCore_service2</CachedSettingsPropName>
     </WebReferenceUrl>
   </ItemGroup>
   <PropertyGroup>

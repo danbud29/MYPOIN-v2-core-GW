@@ -23,7 +23,7 @@ namespace MyPoinNew_CoreGateway.MyPoinCore {
     
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3752.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Web.Services.WebServiceBindingAttribute(Name="service2Soap", Namespace="http://tempuri.org/")]
@@ -35,6 +35,8 @@ namespace MyPoinNew_CoreGateway.MyPoinCore {
         
         private System.Threading.SendOrPostCallback redeem_pointOperationCompleted;
         
+        private System.Threading.SendOrPostCallback redeem_point_card_numOperationCompleted;
+        
         private System.Threading.SendOrPostCallback cancel_redeem_pointOperationCompleted;
         
         private System.Threading.SendOrPostCallback redeem_stampsOperationCompleted;
@@ -45,7 +47,7 @@ namespace MyPoinNew_CoreGateway.MyPoinCore {
         
         /// <remarks/>
         public service2() {
-            this.Url = global::MyPoinNew_CoreGateway.Properties.Settings.Default.MyPoinNew_CoreGateway_MyPoinCore_Service;
+            this.Url = global::MyPoinNew_CoreGateway.Properties.Settings.Default.MyPoinNew_CoreGateway_MyPoinCore_service2;
             if ((this.IsLocalFileSystemWebService(this.Url) == true)) {
                 this.UseDefaultCredentials = true;
                 this.useDefaultCredentialsSetExplicitly = false;
@@ -87,6 +89,9 @@ namespace MyPoinNew_CoreGateway.MyPoinCore {
         
         /// <remarks/>
         public event redeem_pointCompletedEventHandler redeem_pointCompleted;
+        
+        /// <remarks/>
+        public event redeem_point_card_numCompletedEventHandler redeem_point_card_numCompleted;
         
         /// <remarks/>
         public event cancel_redeem_pointCompletedEventHandler cancel_redeem_pointCompleted;
@@ -181,6 +186,35 @@ namespace MyPoinNew_CoreGateway.MyPoinCore {
             if ((this.redeem_pointCompleted != null)) {
                 System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
                 this.redeem_pointCompleted(this, new redeem_pointCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/redeem_point_card_num", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public string[] redeem_point_card_num(string json) {
+            object[] results = this.Invoke("redeem_point_card_num", new object[] {
+                        json});
+            return ((string[])(results[0]));
+        }
+        
+        /// <remarks/>
+        public void redeem_point_card_numAsync(string json) {
+            this.redeem_point_card_numAsync(json, null);
+        }
+        
+        /// <remarks/>
+        public void redeem_point_card_numAsync(string json, object userState) {
+            if ((this.redeem_point_card_numOperationCompleted == null)) {
+                this.redeem_point_card_numOperationCompleted = new System.Threading.SendOrPostCallback(this.Onredeem_point_card_numOperationCompleted);
+            }
+            this.InvokeAsync("redeem_point_card_num", new object[] {
+                        json}, this.redeem_point_card_numOperationCompleted, userState);
+        }
+        
+        private void Onredeem_point_card_numOperationCompleted(object arg) {
+            if ((this.redeem_point_card_numCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.redeem_point_card_numCompleted(this, new redeem_point_card_numCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
             }
         }
         
@@ -291,11 +325,11 @@ namespace MyPoinNew_CoreGateway.MyPoinCore {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3752.0")]
     public delegate void CheckPoinCompletedEventHandler(object sender, CheckPoinCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3752.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class CheckPoinCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -317,11 +351,11 @@ namespace MyPoinNew_CoreGateway.MyPoinCore {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3752.0")]
     public delegate void earning_pointCompletedEventHandler(object sender, earning_pointCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3752.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class earning_pointCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -343,11 +377,11 @@ namespace MyPoinNew_CoreGateway.MyPoinCore {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3752.0")]
     public delegate void redeem_pointCompletedEventHandler(object sender, redeem_pointCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3752.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class redeem_pointCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -369,11 +403,37 @@ namespace MyPoinNew_CoreGateway.MyPoinCore {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3752.0")]
+    public delegate void redeem_point_card_numCompletedEventHandler(object sender, redeem_point_card_numCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3752.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class redeem_point_card_numCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal redeem_point_card_numCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public string[] Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string[])(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3752.0")]
     public delegate void cancel_redeem_pointCompletedEventHandler(object sender, cancel_redeem_pointCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3752.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class cancel_redeem_pointCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -395,11 +455,11 @@ namespace MyPoinNew_CoreGateway.MyPoinCore {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3752.0")]
     public delegate void redeem_stampsCompletedEventHandler(object sender, redeem_stampsCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3752.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class redeem_stampsCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -421,11 +481,11 @@ namespace MyPoinNew_CoreGateway.MyPoinCore {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3752.0")]
     public delegate void cancel_redeem_stampsCompletedEventHandler(object sender, cancel_redeem_stampsCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3761.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3752.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class cancel_redeem_stampsCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {

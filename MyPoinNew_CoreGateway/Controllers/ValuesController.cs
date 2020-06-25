@@ -245,7 +245,116 @@ namespace MyPoinNew_CoreGateway.Controllers
 					response.redemption.stamps_used = cRespCore_redeem.redemption_point.point_used;
 					response.redemption.id = int.Parse(cRespCore_redeem.redemption_point.id);//balikan dari core adalah string, sedangkan indomaret nangkepnya adalah integer
 
+					try
+					{
+						//balikan dari core tambah card number , jadi nanti di toko terserah, kalo main 1 server baca ID tok, kalo main 2 server baca cardnumber
+						response.redemption.card_number = cRespCore_redeem.membership.card_number;
+					}
+					catch (Exception exx)
+					{
+						fungsi.tracelog($"error deserialize json dari core , membership.card_number {exx.Message} // {exx.StackTrace}");
+					}
+
 					fungsi.tracelog("REDEEM FLEXIBLE RETURN : " + JsonConvert.SerializeObject(response));
+
+					return Json(response);
+					/*
+						{  "redemption":{"id":3951929,"reward":"Flexible Reward","stamps_used":5300,"extra_data":null},
+						   "membership":{"tags":[],"status":100,"status_text":"Blue","stamps":49,"balance":0,"is_blocked":false,"referral_code":"Z998KKX6","start_date":"2019-09-08","created":"2019-09-08"},
+						   "reward":{"id":3,"name":"Flexible Reward","stamps_to_redeem":0,"extra_data":{},"code":"","type":"reward"}	}
+					*/
+				}
+				else
+				{
+					fungsi.tracelog("REDEEM FLEXIBLE RETURN  : " + respCore[1]);
+
+					return ResponseMessage(Request.CreateResponse(HttpStatusCode.BadRequest, respCore[1]));
+				}
+			}
+			catch (Exception ex)
+			{
+				CFungsi fungsi = new CFungsi();
+				fungsi.tracelog("error at redeem flexible " + ex.Message + " -- " + ex.StackTrace);
+				return ResponseMessage(Request.CreateErrorResponse(HttpStatusCode.BadRequest, ex.Message));
+			}
+
+		}
+
+
+		[AllowAnonymous]
+		[HttpPost]
+		[Route("api/idm/redemptions/redeem-reward-cardnumber")]
+		public IHttpActionResult RedeemFlexibleCardNumber([FromBody] ClsRedeemRequest body)
+		{
+			/*
+		 * {"input_method":"scanned","token":"3af1004f8ce67df9a317d447ca2dd522e9e56bff","invoice_number":"TK5Z190926102000000052",
+		 * "user":"101767767463","store":"TK5Z","reward":3,"stamps":6700}
+		 */
+			try
+			{
+				string jsonMasuk = JsonConvert.SerializeObject(body);
+				CFungsi fungsi = new CFungsi();
+				fungsi.tracelog("REDEEM FLEXIBLE MASUK : " + jsonMasuk);
+
+				coreReq_redeemPoint coreReq_redeem = new coreReq_redeemPoint();
+				coreReq_redeem.addtime = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+				coreReq_redeem.token = body.user;
+				coreReq_redeem.id_bucket = body.token;
+				coreReq_redeem.id_merchant = body.reward.ToString();
+
+				coreReq_redeem.id_toko = body.store;
+				coreReq_redeem.invoice_number = body.invoice_number;
+				coreReq_redeem.kodecabang = body.store;
+				coreReq_redeem.input_method = body.input_method;
+				try
+				{
+					coreReq_redeem.kodepromo = body.extra_data.promo;
+				}
+				catch (Exception ex)
+				{ }
+				coreReq_redeem.point = body.stamps;
+
+
+				string JsonCoreReq = JsonConvert.SerializeObject(coreReq_redeem);
+				MyPoinCore.service2 service = new MyPoinCore.service2();
+				fungsi.tracelog("REDEEM POINT REQUEST CORE : " + service.Url + " " + JsonCoreReq);
+				string[] respCore = service.redeem_point_card_num(JsonCoreReq);
+				fungsi.tracelog("REDEEM POINT RESPONSE CORE : " + respCore[0] + "//" + respCore[1] + "//" + respCore[2]);
+
+
+				//0
+				//{""redemption_point"":{""id"":""100018279757"",""point_used"":1000,""add_time"":""2020-06-18 15:36:57"",""status"":""SUKSES""},
+				//""membership"":{""point"":0,""is_blocked"":false,""add_time"":""2020-06-18 15:36:57""}}
+				//TPTP200618101000000260
+
+
+				if (respCore[0] == "0")
+				{
+					coreResp_redeemPoint cRespCore_redeem = JsonConvert.DeserializeObject<coreResp_redeemPoint>(respCore[1]);
+					//{"redemption_point":{"id":"100018279757","point_used":3400,"add_time":"2020-06-18 14:45:44","status":"SUKSES"},"membership":{"point":0,"is_blocked":false,"add_time":"2020-06-18 14:45:44"}}
+
+					ClsRedeemResponse response = new ClsRedeemResponse();
+
+					response.membership.stamps = cRespCore_redeem.membership.point;
+					response.membership.start_date = cRespCore_redeem.membership.add_time;
+					response.membership.referral_code = cRespCore_redeem.membership.referral_code;
+
+					response.redemption.stamps_used = cRespCore_redeem.redemption_point.point_used;
+					response.redemption.id = int.Parse(cRespCore_redeem.redemption_point.id);//balikan dari core adalah string, sedangkan indomaret nangkepnya adalah integer
+
+					try
+					{
+						//balikan dari core tambah card number , jadi nanti di toko terserah, kalo main 1 server baca ID tok, kalo main 2 server baca cardnumber
+						response.redemption.card_number = cRespCore_redeem.membership.card_number;
+					}
+					catch (Exception exx)
+					{
+						fungsi.tracelog($"error deserialize json dari core , membership.card_number {exx.Message} // {exx.StackTrace}");
+					}
+
+					fungsi.tracelog("REDEEM FLEXIBLE RETURN : " + JsonConvert.SerializeObject(response));
+
+
 
 					return Json(response);
 					/*
